@@ -37,17 +37,7 @@ function getMonth(startDateStr) {
 function render(resumeObject) {
 
     resumeObject.basics.capitalName = resumeObject.basics.name.toUpperCase();
-    if(resumeObject.basics && resumeObject.basics.email) {
-        resumeObject.basics.gravatar = gravatar.url(resumeObject.basics.email, {
-            s: '200',
-            r: 'pg',
-            d: 'mm'
-        });
-    }
-    if (resumeObject.basics.picture || resumeObject.basics.gravatar) {
-        resumeObject.photo = resumeObject.basics.picture ? resumeObject.basics.picture : resumeObject.basics.gravatar;
-    }
-
+    
     _.each(resumeObject.basics.profiles, function(p){
         switch(p.network.toLowerCase()) {
             case "facebook":
