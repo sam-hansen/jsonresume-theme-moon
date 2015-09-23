@@ -19,18 +19,8 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-12">
-            <div id="photo-header" class="text-center">
-                <!-- PHOTO (AVATAR) -->
-                {{#photo}}
-                    <div id="photo">
-                        <img src="{{photo}}" alt="avatar">
-                    </div>
-                {{/photo}}
-                <div id="text-header" {{^photo}}style="margin-top: 90px;"{{/photo}}>
-                    <h1>{{basics.name}}<br>{{#basics.label}}<span>{{basics.label}}</span>{{/basics.label}}</h1>
-                </div>
-            </div>
-        </div>
+            <h1>{{basics.name}}<br>{{#basics.label}}<span>{{basics.label}}</span>{{/basics.label}}</h1>
+         </div>
     </div>
     <div class="row">
         <div class="col-xs-12 col-sm-7">

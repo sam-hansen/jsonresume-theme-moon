@@ -1,6 +1,5 @@
 var fs = require('fs');
 var _ = require('lodash');
-var gravatar = require('gravatar');
 var Mustache = require('mustache');
 
 var d = new Date();
