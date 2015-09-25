@@ -49,7 +49,8 @@
             {{#basics.phone}}
             <div class="contact-item">
               <div class="icon pull-left text-center"><span class="fa fa-phone fa-fw"></span></div>
-              <div class="title only pull-right">{{basics.phone}}</div>
+              <div class="title only pull-right"><a class="badge" href="tel:{basics.phone}}">{{basics.phone}}</a>
+            </div>
             </div>
             {{/basics.phone}}
             {{#basics.email}}
@@ -76,15 +77,15 @@
           {{#basics.summary}}
           <!-- ABOUT ME -->
           <div class="box">
-            <h2><i class="fa fa-user ico"></i> About</h2>
+            <h2><i class="fa fa-user ico"></i>&nbsp;&nbsp;About</h2>
             <p>{{{basics.summary}}}</p>
           </div>
           {{/basics.summary}}
           {{#workBool}}
           <!-- WORK EXPERIENCE -->
           <div class="box work">
-            <h2><i class= "fa fa-suitcase ico"></i>&nbsp;&nbsp;Work Experience</h2>
-            <h4><i class="fa fa-clock-o"></i>&nbsp;{{inYears}}&nbsp;Years Experience</h4>
+            <h2><i class= "fa fa-suitcase ico"></i>&nbsp;&nbsp;Work Experience <p class="experienceYears"><i class="fa fa-clock-o"></i>&nbsp;{{inYears}}&nbsp;Years</p></h2>
+            
             {{#work}}
               <div class="job clearfix">
                 <div class="row">
@@ -92,15 +93,15 @@
                     <div class="where">{{company}}</div>
                     {{#website}}
                     <div class="address">
-                      <a href="{{website}}" target= "_blank"><i class="fa fa-globe ico"></i> {{website}}</a>
+                      <a href="{{website}}" target= "_blank">{{website}}</a>
                     </div>
                     {{/website}}
                     <div class="year">{{startDateMonth}}{{startDateYear}} – {{endDateMonth}}{{endDateYear}}</div>
+                    <div class="profession">{{position}}</div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="job-details col-xs-12 col-md-11">
-                    <div class="profession">{{position}}</div>
                     <div class="description">
                       {{{summary}}}
                       {{#boolHighlights}}
@@ -241,7 +242,7 @@
                 <div class="year">{{day}} {{month}} {{year}}</div>
                 {{#website}}
                 <div class="address">
-                  <a href="{{website}}" target= "_blank"><i class="fa fa-globe ico"></i> {{website}}</a>
+                  <a href="{{website}}" target= "_blank">{{website}}</a>
                 </div>
                 {{/website}}
                 {{#summary}}
@@ -266,7 +267,7 @@
           {{#interestsBool}}
           <!-- HOBBIES -->
           <div class="box">
-            <h2><i class="fa fa-code ico"></i>&nbsp;Code Interests</h2>
+            <h2><i class="fa fa-code ico"></i>&nbsp;&nbsp;Current Code Interests</h2>
             {{#interests}}
             <div class="interests clearfix">
               <div class="item-interests">

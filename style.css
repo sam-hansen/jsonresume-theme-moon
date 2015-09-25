@@ -185,19 +185,24 @@ h1, .h1, h2, .h2, h3, .h3 {
     padding: 0;
 }
 
+.experienceYears{
+  float: right;
+}
+
 .job{
     margin-bottom: 15px;
 }
 .job .details {
-    margin-left: 0px;
-    width: auto;
-    margin-bottom: 5px;
-    color: #fff;
-    background-color: #32475c;
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid #fff;
-    border-radius: 5px;
-    padding: 5px;
+  text-align: center;
+  margin-left: 0px;
+  width: auto;
+  margin-bottom: 5px;
+  color: #fff;
+  background-color: #32475c;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-radius: 5px;
+  padding: 5px;
 }
 .job-details{
   border-bottom: 1px solid #ccc;
