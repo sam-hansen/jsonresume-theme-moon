@@ -9,4 +9,8 @@ bump: ;node ./bumpVersion.js
 
 version: test bump
 
-.PHONY: test bump
+pub: ;npm publish
+
+dist: test bump pub
+
+.PHONY: test bump pub
