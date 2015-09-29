@@ -18,8 +18,8 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-md-12">
-          <div id="photo-header" class="text-center">
+        <div class="col-xs-12">
+          <div id="" class="text-center">
             <!-- PHOTO (AVATAR) -->
             {{#photoBool}}
             {{#photo}}
@@ -28,7 +28,7 @@
             </div>
             {{/photo}}
             {{/photoBool}}
-            <div id="text-header" {{^photo}}{{/photo}}>
+            <div id="text-header">
               <h1>{{basics.name}}<br>{{#basics.label}}<span>{{basics.label}}</span>{{/basics.label}}</h1>
             </div>
           </div>
@@ -78,18 +78,18 @@
           <!-- ABOUT ME -->
           <div class="box">
             <h2><i class="fa fa-user ico"></i>&nbsp;&nbsp;About</h2>
-            <p>{{{basics.summary}}}</p>
+            <p>{{basics.summary}}</p>
           </div>
           {{/basics.summary}}
           {{#workBool}}
           <!-- WORK EXPERIENCE -->
           <div class="box work">
-            <h2><i class= "fa fa-suitcase ico"></i>&nbsp;&nbsp;Work Experience <p class="experienceYears"><i class="fa fa-clock-o"></i>&nbsp;{{inYears}}&nbsp;Years</p></h2>
+            <h2 class="col-xs-12"><i class= "fa fa-suitcase ico"></i>&nbsp;&nbsp;Work Experience <p class="experienceYears"><i class="fa fa-clock-o"></i>&nbsp;{{inYears}}&nbsp;Years</p></h2>
             
             {{#work}}
               <div class="job clearfix">
                 <div class="row">
-                  <div class="details col-xs-12 col-md-11">
+                  <div class="details col-xs-12">
                     <div class="where">{{company}}</div>
                     {{#website}}
                     <div class="address">
@@ -101,7 +101,7 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="job-details col-xs-12 col-md-11">
+                  <div class="job-details col-xs-12">
                     <div class="description">
                       {{{summary}}}
                       {{#boolHighlights}}
@@ -157,7 +157,7 @@
                   <div class="col-xs-11 pull-right">
                     <div class="profession">{{position}}</div>
                     <div class="description">
-                      {{{summary}}}
+                      {{summary}}
                       {{#boolHighlights}}
                       <div class="highlights">Highlights</div>
                       <ul class="list-group">
